@@ -20,6 +20,22 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "allowedCommonJsDependencies": [
+              "lodash",
+              "@walletconnect/web3-provider",
+              "@walletconnect/window-metadata",
+              "@walletconnect/socket-transport",
+              "@walletconnect/environment",
+              "@walletconnect/window-getters",
+              "@metamask/detect-provider",
+              "hash.js",
+              "query-string",
+              "js-sha3",
+              "bn.js",
+              "bech32",
+              "scrypt-js",
+              "aes-js"
+            ],
             "outputPath": "dist/ngrome-dapp",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -31,6 +47,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -99,6 +116,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
             "scripts": []
