@@ -8,6 +8,7 @@ import { MainRoutingModule } from "./main-routing.module";
 import { HomeComponent } from "./home/home.component";
 import { SwitchNetworkComponent } from "./component/switch-network/switch-network.component";
 import { ConnectWalletComponent } from "./component/connect-wallet/connect-wallet.component";
+import {FormsModule} from "@angular/forms";
 
 
 @NgModule({
@@ -16,11 +17,12 @@ import { ConnectWalletComponent } from "./component/connect-wallet/connect-walle
     SwitchNetworkComponent,
     ConnectWalletComponent
   ],
-  imports: [
-    CommonModule,
-    MainRoutingModule,
-    MatDialogModule
-  ],
+    imports: [
+        CommonModule,
+        MainRoutingModule,
+        MatDialogModule,
+        FormsModule
+    ],
   providers: [],
   bootstrap: []
 })

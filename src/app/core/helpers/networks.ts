@@ -86,7 +86,7 @@ export const NETWORK_ICON: ChainIdModel = {
   [ChainId.Fantom]: '/assets/icons/networks/fantom.jpeg',
 }
 
-export const NETWORK_INFO = {
+export const  NETWORK_INFO = {
   [ChainId.Ethereum]: {
     chainId: '0x1',
     chainName: 'Ethereum',
